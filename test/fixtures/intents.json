@@ -1,0 +1,43 @@
+[
+  {
+    "topic":"WEATHER",
+    "utterences":[
+      "Weather",
+      "Whats the weather like?",
+      "Hows the weather looking?",
+      "Whats the weather forecast"
+    ],
+    "keywords": [
+      "Weather",
+      "Forecast"
+    ]
+  },
+  {
+    "topic":"NEWS",
+    "utterences":[
+      "News",
+      "Todays news",
+      "Whats the top story?",
+      "Whats the top news",
+      "Whats going on today"
+    ],
+    "keywords": [
+      "News",
+      "Story"
+    ]
+  },
+  {
+    "topic":"GREETING",
+    "utterences":[
+      "Hello",
+      "Hey",
+      "Howdy",
+      "Hello how are you?"
+    ],
+    "keywords": [
+      "Hello",
+      "Hey",
+      "Howdy"
+    ]
+  }
+]
