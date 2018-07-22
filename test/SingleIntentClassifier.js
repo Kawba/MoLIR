@@ -30,4 +30,24 @@ describe('Single Intent Classifier Unit Tests', function () {
         done();
     });
 
+    it('Should fail to classify - no minimum confidence', async function(done){
+        let erroredIntentClassifier = new IntentClassifier(intents);
+        try {
+            let output = await erroredIntentClassifier.classifyAndReturnSingleResult("Hello");
+        } catch(e) {
+            console.log(e);
+            done();
+        }
+    })
+
+    it('Should fail to classify - no intents', async function(done){
+        let erroredIntentClassifier = new IntentClassifier(undefined, 0.75);
+        try {
+            let output = await erroredIntentClassifier.classifyAndReturnSingleResult("Hello");
+        } catch(e) {
+            console.log(e);
+            done();
+        }
+    })
+
 });
