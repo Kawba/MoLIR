@@ -1,6 +1,6 @@
 [
   {
-    "topic":"WEATHER",
+    "intentName":"WEATHER",
     "utterences":[
       "Weather",
       "Whats the weather like?",
@@ -13,13 +13,14 @@
     ]
   },
   {
-    "topic":"NEWS",
+    "intentName":"NEWS",
     "utterences":[
       "News",
       "Todays news",
       "Whats the top story?",
       "Whats the top news",
-      "Whats going on today"
+      "Whats going on today",
+      "Whats going on"
     ],
     "keywords": [
       "News",
@@ -27,7 +28,7 @@
     ]
   },
   {
-    "topic":"GREETING",
+    "intentName":"GREETING",
     "utterences":[
       "Hello",
       "Hey",

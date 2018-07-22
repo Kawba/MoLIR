@@ -1,10 +1,31 @@
 //Constructor to load intents
-function IntentClassifier(intents) {
+function Molir(intents, minimumConfidence) {
     this.intents = intents;
+    this.minimumConfidence = minimumConfidence;
 }
 
+Molir.prototype.classifyAndReturnSingleResult = function(input) {
+
+    let results = this.classifyAndReturnRankedIntents(input);
+
+    let selectedResult = results[0];
+
+    if(selectedResult.score <100 && selectedResult.confidence >= this.minimumConfidence){
+        return {
+            classified: false
+        };
+    } else {
+        return {
+            classified: true,
+            intentName: selectedResult.intentName,
+            confidence: selectedResult.confidence
+        };
+    }
+}
+
+
 //Function to classify input based on loaded intents
-IntentClassifier.prototype.classify = function(input) {
+Molir.prototype.classifyAndReturnRankedIntents = function(input) {
 
     let lowerCase = input.toLowerCase();
     let totalScore = 0;
@@ -49,12 +70,17 @@ IntentClassifier.prototype.classify = function(input) {
         intent.confidence = intent.score/totalScore
     });
 
+    //Sort intents
+    let sorted = this.intents.sort((a,b)=>{
+        return b.confidence - a.confidence
+    });
+
     //sent back the classified intents
-    return this.intents;
+    return sorted;
 };
 
 
 //export module
-module.exports = IntentClassifier;
+module.exports = Molir;
 
 
