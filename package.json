@@ -1,7 +1,7 @@
 {
     "name": "molir",
     "description": "A Most Likely Intent Recogniser (MoLIR)",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "author": {
         "name": "Kawba"
     },
