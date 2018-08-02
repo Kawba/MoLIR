@@ -1,7 +1,7 @@
 {
     "name": "molir",
     "description": "A Most Likely Intent Recogniser (MoLIR)",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "author": {
         "name": "Kawba"
     },
@@ -17,5 +17,13 @@
     "devDependencies": {
         "chai": "^4.1.2",
         "moch": "0.0.1"
-    }
+    },
+    "keywords": [
+        "molir",
+        "classification",
+        "nlp",
+        "intent",
+        "recognition",
+        "language"
+    ]
 }
