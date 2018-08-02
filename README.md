@@ -3,18 +3,18 @@ MoLIR (A.k.a Most Likely Intent Recogniser) is a simple, non machine learning, t
 
 ## Usage
 
-1. Install dependency
+1 - Install dependency
 ```
 npm install molir --save
 ```
 
-2. Require the module
+2 - Require the module
 
 ```
 const IntentClassifier = require('molir');
 ```
 
-3. Declare your intents
+3 - Declare your intents
 ```
 let intents = [
     {
@@ -61,12 +61,12 @@ let intents = [
     }
   ];
 ```
-4. Create classifier passing in the intents and a minimum matching confidence score
+4 - Create classifier passing in the intents and a minimum matching confidence score
 ```
 let classifier = new IntentClassifier(intents, 0.75);
 ```
 
-5. Classify your input
+5 - Classify your input
 ```
 classifier.classify("Whats todays news?")
 .then((result)=>{
