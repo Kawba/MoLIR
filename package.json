@@ -6,6 +6,10 @@
         "name": "Kawba"
     },
     "license": "MIT",
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/Kawba/MoLIR"
+    },
     "scripts": {
         "test": "mocha ./test --recursive --exit"
     },
