@@ -1,11 +1,3 @@
-# MoLIR
-
-## About
-MoLIR (A.k.a Most Likely Intent Recogniser) is a non machine learning recognition
-
-## Usage
-
-```
 //Require molir module
 const IntentClassifier = require('../molir.js');
 
@@ -70,4 +62,3 @@ classifier.classify("Whats todays news?")
     }
     */
 })
-```
