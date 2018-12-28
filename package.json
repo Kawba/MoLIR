@@ -5,6 +5,7 @@
     "author": {
         "name": "Kawba"
     },
+    "main": "molir.js",
     "license": "MIT",
     "repository" : {
         "type" : "git",
